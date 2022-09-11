@@ -41,15 +41,16 @@
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to KoKoaTalk</h1>
       <p class="welcome-heaer__text">
-        만약 계정을 갖고 계시면 당신의 이메일 혹은 핸드폰 번호로 로그인해주세요.
+        If you have a KoKoaTalk Account,</br> Log in with your e-mail or phone
+        number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or Phone number" required />
-      <input type="password" placeholder="Password" required />
-      <input type="submit" value="로그인" />
-      <input type="submit" value="회원가입" />
-      <a href="#"> 계정 찾기</a>
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or Phone number" required />
+      <input name="password" type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#"> Find KoKoaTalk Account or Password</a>
     </form>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
