@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KoKoaTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column">
+        <span id="clock">clock</span>
+        <script>
+          var Target = document.getElementById("clock");
+          function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+
+            Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${
+              minutes < 10 ? `0${minutes}` : minutes
+            }`;
+          }
+          clock();
+          setInterval(clock, 1000); // 1초마다 실행
+        </script>
+      </div>
+      <div class="status-bar__column">
+        <span>77%</span>
+        <i class="fas fa-battery-three-quarters fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KoKoaTalk</h1>
+      <p class="welcome-heaer__text">
+        만약 계정을 갖고 계시면 당신의 이메일 혹은 핸드폰 번호로 로그인해주세요.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or Phone number" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="로그인" />
+      <input type="submit" value="회원가입" />
+      <a href="#"> 계정 찾기</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
