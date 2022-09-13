@@ -2,11 +2,17 @@
     display:flex;
     justify-content: center;
     padding:5px 3px;
+    top:0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .status-bar__column{
     width:33%
 }
+.status-bar__column:first-child {
+    margin-top:7px;
+   }
 .status-bar__column:first-child span{
  margin-right:5px;
 }
@@ -24,4 +30,5 @@
 }
 #clock{
     font-family: 'Poppins', sans-serif; 
+    margin-top: 8px ;
 }

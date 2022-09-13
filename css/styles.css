@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@500&display=swap');
 @import "variables.css";
 @import "reset.css";
-@import "status-bar.css";
-@import "welcome-header.css";
-@import "login-form.css"; 
+
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+
+/* screen */
+@import "screens/login-form.css"; 
+@import "screens/welcome-header.css";
+@import "screens/friends.css";
+
 body{
     font-family: 'Poppins', sans-serif;
+    color:#2e363e;
 }

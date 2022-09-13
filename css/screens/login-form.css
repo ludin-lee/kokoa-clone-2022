@@ -37,7 +37,5 @@ background-color: var(--yellow);}
 }
 #login-form a {
     text-align: center;
-    text-decoration: none;
-    color:inherit;
     font-size: 10.5px;
 }
