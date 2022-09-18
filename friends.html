@@ -38,13 +38,15 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <!-- 스크린 바 -->
+    <!--header-->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
     <!-- 친구 이름 창 -->
@@ -77,47 +79,55 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="img/ara.jpg"
+              src="img/박보영.jpg"
               class="user-component__avatar user-component__avatar--sm"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">아라꿍♥</h4>
+              <h4 class="user-component__title user-component__title--not-bold">박보영</h4>
             </div>
           </div>
           <div class="user-component__column">
+            <div>
             <span>2</span>
             <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
           </div> 
         </div>
       </div>
     </main>
-
     <!-- 네비게이션 바 -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#">
-            <i class="far fa-comment fa-2x">
-              <span class="nav__count"> 1 </span>
-            </i></a
-          >
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="#"
-            ><i class="fas fa-ellipsis-h fa-2x"></i>
-            <div class="nav__news"></div
-          ></a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <a class="nav__link" href="friends.html">
+              <i class="fas fa-user fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="chats.html">
+              <i class="far fa-comment fa-2x">
+                <span class="nav__count badge"> 1 </span>
+              </i></a
+            >
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="more.html"
+              ><i class="fas fa-ellipsis-h fa-2x"></i>
+              <div class="nav__news"></div
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!--splash-screen-->
+      <div id="splash-screen">
+        <i class="fas fa-comment"></i>
+      </div>
+      <div id="no-mobile">
+        <span>Your Screen is Too big ㅠㅠ</span>
+      </div>
     <!-- 아이콘용 스크립트 -->
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
